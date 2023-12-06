@@ -35,7 +35,7 @@ You need to implement a constructor in the Manager class that calls the supercla
 
 ```ts
 class Employee {
-  // Заповніть модифікатори доступу
+  // Fill in the access modifiers
   name: string;
   department: string;
   salary: number;
@@ -52,7 +52,7 @@ class Employee {
 }
 
 class Manager extends Employee {
-  // Реалізуйте конструктор та збільшіть salary на 10000
+  // Implement the constructor and increase salary by 10000
 }
 ```
 
@@ -65,7 +65,7 @@ You are creating a game where there are characters with different roles. Right n
 Define the interfaces ICharacter and ISpellCaster in a way that aligns with the requirements of the Wizard class. The ICharacter interface should include properties like name and level, and even methods like introduce and levelUp. The ISpellCaster interface should include the castSpell method.
 
 ```ts
-// реалізація класу Wizard
+// implementation of the Wizard class
 class Wizard implements ICharacter, ISpellCaster {
   constructor(
     public name: string,
@@ -90,7 +90,7 @@ class Wizard implements ICharacter, ISpellCaster {
   }
 }
 
-// тестування класу
+// class testing
 const wizard = new Wizard("Merlin", 15);
 
 wizard.introduce("I am the mighty wizard");
